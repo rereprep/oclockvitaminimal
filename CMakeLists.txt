@@ -31,7 +31,6 @@ add_executable(oclockvitaminimal
 
 target_link_libraries(oclockvitaminimal
   taihen_stub
-  SceLibKernel_stub
   ScePower_stub
 )
 
