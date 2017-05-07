@@ -4,7 +4,9 @@
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/power.h>
 #include <taihen.h>
+
 static SceUID g_hooks[4];
+
 static tai_hook_ref_t power_hook1;
 static int power_patched1(int freq) {
     return TAI_CONTINUE(int, power_hook1, 444);
